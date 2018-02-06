@@ -1,0 +1,569 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="utf-8">
+         <title>Recepten van Geraldine</title>
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- <link href="custom/sytle.css" rel="stylesheet"> -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- FONTS -->
+        
+        <!-- barcode onleesbaar -->
+        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128" rel="stylesheet">
+        
+        <!-- barcode met letters eronder en undertale -->
+        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Press+Start+2P" rel="stylesheet">
+        
+        <!-- nog meer -->
+        <link href="https://fonts.googleapis.com/css?family=Faster+One|IM+Fell+English+SC|Lemon|Libre+Barcode+128|Libre+Barcode+39+Text|Monofett|Monoton|Nosifer|Open+Sans:400i|Pattaya|Press+Start+2P|Six+Caps" rel="stylesheet">
+        
+        <!-- FONTS -->
+        <style style="">
+        
+            
+            p {
+                font-family: 'Libre Barcode 128', cursive;
+            }
+            
+            header {
+                
+                font-family: 'IM Fell English SC', serif;
+                background-color:aliceblue;
+                text-align:center;
+            }
+            
+            
+            .paneltext {
+                
+                font-family: 'Pattaya', sans-serif;
+                text-align:justify;
+                 margin:10px 5px;
+            }
+            
+            .paneltext ~ p {
+                
+                font-family: 'Open Sans', sans-serif;
+                text-align: inherit;
+                margin:auto;
+            }
+            
+            .modaltext {
+                
+                font-family: 'Pattaya', sans-serif;
+                text-align:justify;
+                 margin:10px 5px;
+            }
+            
+            .modaltext ~ p {
+                
+                font-family: 'Open Sans', sans-serif;
+                text-align: inherit;
+                margin:auto;
+            }
+            
+            .modalpar {
+                
+                width:100%;
+                font-size:14px;
+                word-wrap: break-word;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            .home {
+                
+            }
+            
+            .socialmedia {
+                
+            }
+            
+            .overons {
+        
+            }
+           /* h1, h2, h3, h4, h5, h6 {
+                font-family: 'nosifer', cursive;
+            } */
+            
+            .sega {
+                
+                font-family: 'Monoton', cursive;
+                color: royalblue;
+            }
+            
+            /* ALL FONTS:
+            
+            font-family: 'Libre Barcode 128', cursive;
+            font-family: 'Libre Barcode 39 Text', cursive;
+            font-family: 'Press Start 2P', cursive;
+            font-family: 'Monoton', cursive;
+            font-family: 'IM Fell English SC', serif;
+            font-family: 'Nosifer', cursive;
+            font-family: 'Faster One', cursive;
+            font-family: 'Monofett', cursive;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Pattaya', sans-serif;
+            font-family: 'Lemon', cursive;
+            font-family: 'Six Caps', sans-serif;
+            
+            */
+        </style>
+    </head>
+    
+    <audio id="myAudio">
+    <source src="jingle.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    <body>
+
+        <header>
+            <h1>Kookerkes</h1>
+        </header>
+
+        <!-- linker kant voor de navigatie -->
+        <div class="container" style="">
+            <div class="row">
+                <div class="col-md-1" style="border-radius:10px;">
+                    <ul class="nav nav-tabs" role="tablist" style="border-radius: 10px;top: 0;padding: 5px;background-color: #eee;border: 2px solid #555; z-index: 10;">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" data-toggle="tooltip" data-placement="top" title="Home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a></li>
+                        <li role="presentation"><a href="#recepten" aria-controls="profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-book" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Recepten"></span></a></li>
+                        <li role="presentation"><a href="#social" aria-controls="messages" role="tab" data-toggle="tab"data-toggle="tooltip" data-placement="top" title="Social Media"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></li>
+                        <li role="presentation"><a href="#over" aria-controls="settings" role="tab" data-toggle="tab" data-toggle="tooltip" data-placement="top" title="over ons"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+                    </ul>
+                    
+                </div>
+            <br>
+            <!-- Middelste column -->
+                <div class="col-md-7">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        
+                        <!-- Home -->
+                        <div role="tabpanel" class="tab-pane active" id="home" style="background-color: lightsteelblue;border:solid lightsteelblue 5px; border-radius: 10px;">
+                        <h2 class="paneltext">Home</h2>
+                            <p>Wat fijn! als je wilt koken, maar je weet niet wat...</p>
+                            <p>Er zijn dan wel héééél veel sites die je allemaal zogenaamde gezonde recepten aansmeren, maar ze maken je alleen maar slapper en slomer.</p>
+                        </div>
+                        
+                        <!-- recepten -->
+                        <div role="tabpanel" class="tab-pane" id="recepten" style="">
+                            
+                            <div style="background-color: darkseagreen; border:solid darkseagreen 5px; border-radius: 10px;">
+                                <h2 class="paneltext">Recepten!</h2>
+                                <p>Deze nieuwe, hippe site is er pas net, dus er worden nog recepten toegevoegd!</p>
+                            </div>
+                            <!-- Voeg hier een carrousel toe, met daarin klikbare foto's die ieder naar een aparte modal leiden. in deze modal moeten twee tabs komen, eentje voor SHARE RECIPE Een een andere voor SEND RECIPE. Allen moeten van Boobstrap komen. -->
+                            <br>
+                            <div id="receptos" class="carousel slide" data-ride="carousel" style="background-color: darkseagreen; border-radius: 10px;">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#receptos" data-slide-to="0" class="active"></li>
+                                <li data-target="#receptos" data-slide-to="1"></li>
+                                <li data-target="#receptos" data-slide-to="2"></li>
+                              </ol>
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                
+                                <!-- deel 1 -->
+                                <div class="item active">
+                                  <img src="pics/aspis/bigpic.png" alt="mozzarella"  style="border-radius: 10px;">
+                                  <div class="carousel-caption">
+                                    
+                                      <!-- Hier komt de eerste modal -->
+                                      
+                                    
+                                      <!-- Button trigger modal -->
+                                        <button onclick="playAudio()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#receptuno" >
+                                          Dit wil ik maken!
+                                        </button>
+
+                                        
+
+                                      
+                                  </div>
+                                </div>
+                                  
+                                <!-- deel 2 -->
+                                <div class="item">
+                                  <img src="pics/mozza/bigpic.png" alt="gegratineeerde asperges" style="border-radius: 10px;">
+                                  <div class="carousel-caption">
+                                    
+                                      <!-- Hier komt de tweede modal -->
+                                      <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#receptdos">
+                                          Dit wil ik maken!
+                                        </button>
+
+                                        
+                                      
+                                  </div>
+                                </div>
+                                
+                                <!-- deel 3 -->
+                                <div class="item">
+                                  <img src="pics/spiraaltaart/bigpic.png" alt="spiraaltaart" style="border-radius: 10px;">
+                                  <div class="carousel-caption">
+                                    
+                                      <!-- Hier komt de derde modal -->
+                                      <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#recepttres">
+                                          Dit wil ik maken!
+                                        </button>
+
+                                        
+                                      
+                                  </div>
+                                </div>
+                                
+                              </div>
+
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#receptos" role="button" data-slide="prev" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#receptos" role="button" data-slide="next" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                            
+                            <!-- Modal mozzarella hapjes -->
+                            <!-- pak dit... --><div class="modal fade" id="receptuno" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Gegratineerde Asperges</h4>
+                                            <span>
+                                                
+                                                <!-- een dropdown met deelacties -->
+                                                
+                                            
+                                            
+                                            </span>
+                                            
+                                              </div>
+                                        <div class="modal-body">
+                                            <div class="modalpichead" style="margin: auto; align-content: center">
+                                                <img src="pics/aspis/bigpic.png" alt="Mozzarela hapjes zijn zo gezellig om op te eten!">
+                                            </div>
+                                            
+                                            <div class="container">
+                                                <div class="row">
+                                            <br>        
+                                            <!-- ingredienten -->
+                                            <div class="col-sm-2">
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                  <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: mediumspringgreen;">
+                                                      <h4 class="panel-title">
+                                                        <a class="modaltext" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:aliceblue;">
+                                                          <strong style="text-align: center;">Ingrediënten</strong>
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-hidden="true">
+                                                      <div class="panel-body">
+                                                        <strong class="modaltext" style="text-align: center; font-size: 20px;">Ingrediënten</strong>
+                                                          <p><ul>
+                                                            <li>350 gr groene asperges</li>
+                                                            <li>5 plakken parmaham rolletjes</li>
+                                                            <li>50 gr geraspte kaas</li>
+                                                            <li>125 ml kookroom</li>
+                                                            <li>1 eetlepel hazelnoten</li>
+                                                            <li>Snuf Italiaanse kruiden</li>
+                                                          </ul></p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                    </div>
+                                            <br>
+                                            <!-- recept zelf -->
+                                            <div class="col-sm-6" style="border-radius: 10px;">
+                                            <strong class="modaltext" style="font-size:30px;">Bereiding</strong>
+                                                <br>
+                                            <p class="modalpar">
+                                                Verwarm de grill (of oven) Snijd de laatste 2 cm van de asperges, deze zijn hard en taai. Kook de asperges 6 minuten voor in een pan met water. Laat ze daarna goed uitlekken. Doe de kookroom in een pannetje en breng aan de kook. Laat 40 gr kaas hierin smelten. Voeg de Italiaanse kruiden toe en roer door en laat de saus iets indikken.</p>
+                                            <br>
+                                                <img src="pics/aspis/aspisb.png" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; width:150px;height:100px;"><span><img src="pics/aspis/aspisc.png" style="width:150px;height:100px;"></span><span><img src="pics/aspis/aspisd.png" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; width:150px;height:100px;"></span>
+                                                <br>
+                                                <br>
+                                                <p class="modalpar">Maak pakketjes van 3 of 3 groene asperges en rol ze in een plak parmaham. Leg ze in een ovenschaal. Giet de kaassaus er over. Bestrooi met de rest van de kaas en wat gehakte hazelnoten. Gratineer de asperges 5 min onder grill tot de kaas iets bruin kleurt.</p>
+                                                
+                                                <p class="modalpar"><a href="https://www.leukerecepten.nl/recepten/gegratineerde-groene-asperges/">Origineel</a></p>
+                                            </div>
+                                        </div>
+       
+                                        </div> <!-- container eindigt hier -->
+                                        </div> 
+                                        <div class="modal-footer">
+                                                
+                                            <button onclick="pauseAudio()" type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+                                                <a href="https://www.leukerecepten.nl/recepten/2-x-mozzarella-hapjes/"><button type="button" class="btn btn-primary" >Bron</button></a><a href="https://getbootstrap.com/docs/3.3/javascript/#modals-sizes"><button type="button" class="btn btn-primary" >Bootstrap</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- tot dit, zet hem onder HIER KOMT DE EERSTE MODAL, opslaan en je krijgt een total-lockdown wanneer je deze activeert. -->
+                            
+                            <!-- Modal gegratineerde asperges -->
+                            <div class="modal fade" id="receptdos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                          <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">2 x Mozzarella hapjes</h4>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                              <div class="modal-body">
+                                            <div class="modalpichead" style="margin: auto; align-content: center">
+                                                <img src="pics/mozza/bigpic.png" alt="Mozzarela hapjes zijn zo gezellig om op te eten!">
+                                            </div>
+                                            
+                                            <div class="container">
+                                                <div class="row">
+                                            <br>        
+                                            <!-- ingredienten -->
+                                            <div class="col-sm-2">
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                  <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: mediumspringgreen;">
+                                                      <h4 class="panel-title">
+                                                        <a class="modaltext" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsebOne" aria-expanded="true" aria-controls="collapsebOne" style="color:aliceblue;">
+                                                          <strong style="text-align: center;">Ingrediënten</strong>
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapsebOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-hidden="true">
+                                                      <div class="panel-body">
+                                                        <strong class="modaltext" style="text-align: center; font-size: 20px;">Ingrediënten</strong>
+                                                          <p><ul>
+                                                            <li>18 mini mozzarella balletjes (1 zakje)</li>
+                                                            <li>9 cherrytomaatjes</li>
+                                                            <li>9 plakken komkommer</li>
+                                                            <li>3 plakken gerookte zalm (sandwich)</li>
+                                                            <li>3 plakken parmaham</li>
+                                                            <li>1 theelepel zwart sesamzaad</li>
+                                                            <li>1 eetlepel pistache nootjes (gehakt)</li>
+                                                          </ul></p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                                <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingbTwo">
+                                                  <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseqTwo" aria-expanded="false" aria-controls="collapseqTwo">
+                                                      Extra info
+                                                    </a>
+                                                  </h4>
+                                                </div>
+                                                <div id="collapseqTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingbTwo">
+                                                  <div class="panel-body">
+                                                    MOEILIJKHEIDGRAAD HOLY kusjes
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                
+                                                </div>
+                                                    </div>
+                                            <br>
+                                            <!-- recept zelf -->
+                                            <div class="col-sm-6" style="border-radius: 10px;">
+                                            <strong class="modaltext" style="font-size:30px;">Bereiding</strong>
+                                                <br>
+                                            <p class="modalpar">
+                                                Neem de plakken gerookte zalm en snijd de
+                                                drie plakken ieder in drie lange repen.
+                                                Neem een mozzarella bolletje en rol er 
+                                                1 lange reep gerookte zalm omheen. Leg 
+                                                dit bolletje met zalm op een plak komkommer en prik de prikker erin. Strooi 
+                                                een beetje zwart sesamzaad over de zalm.</p>
+                                            <br>
+                                                <img src="pics/mozza/mozzaa.png" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; width:150px;height:100px;"><span><img src="pics/mozza/mozzab.png" style="width:150px;height:100px;"></span><span><img src="pics/mozza/mozzac.png" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; width:150px;height:100px;"></span>
+                                                <br>
+                                                <br>
+                                                <p class="modalpar">Herhaal dit met de helft van de mozzarella balletjes. Snijd de plakken parmaham ieder in drie lange repen en rol de overige bolletjes mozzarella er in. Halveer de cherrytomaat, leg deze boven de ingerolde balletjes en prik de prikker er doorheen. Verdeel hierover de gehakte pistachenootjes.
+                                                <br>
+                                                Tip: Gebruik sandwich plakken gerookte zalm voor rechte plakken die makkelijk in 3 repen te snijden zijn.</p>
+                                            </div>
+                                        </div>
+       
+                                        </div> <!-- container eindigt hier -->
+                                        </div>    
+                                                  
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                            
+                            <!-- Modal Spiraaltaart -->
+                            <div class="modal fade" id="recepttres" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                          <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Spiraaltaart</h4>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                                  <div class="modal-body">
+                                            <div class="modalpichead" style="margin: auto; align-content: center">
+                                                <img src="pics/spiraaltaart/bigpic.png" alt="Mozzarela hapjes zijn zo gezellig om op te eten!">
+                                            </div>
+                                            
+                                            <div class="container">
+                                                <div class="row">
+                                            <br>        
+                                            <!-- ingredienten -->
+                                            <div class="col-sm-2">
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                  <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingOne" style="background-color: mediumspringgreen;">
+                                                      <h4 class="panel-title">
+                                                        <a class="modaltext" role="button" data-toggle="collapse" data-parent="#baccordion" href="#collapsevOne" aria-expanded="true" aria-controls="collapsevOne" style="color:aliceblue;">
+                                                          <strong style="text-align: center;">Ingrediënten</strong>
+                                                        </a>
+                                                      </h4>
+                                                    </div>
+                                                    <div id="collapsevOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-hidden="true">
+                                                      <div class="panel-body">
+                                                        <strong class="modaltext" style="text-align: center; font-size: 20px;">Ingrediënten</strong>
+                                                          <p><ul>
+                                                            <li>5 á 6 plakjes hartig taartdeeg</li>
+                                                            <li>1,5 courgette</li>
+                                                            <li>1 wortel (winterpeen)</li>
+                                                            <li>3 eieren</li>
+                                                            <li>1 theelepel tijm </li>
+                                                            <li>1 theelepel oregano</li>
+                                                            <li>3 geroosterde paprika’s</li>
+                                                            <li>125 ml room</li>
+                                                            <li>200 gr brie</li>
+                                                            <li>Snuf peper en zout</li>
+                                                          </ul></p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                                <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingTwo">
+                                                  <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#baccordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                      Extra info
+                                                    </a>
+                                                  </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                  <div class="panel-body">
+                                                    &#9832; HOOFDGERECHT	&#9684; 20 MIN + 35 MIN	&#9977; 2 PERSONEN  <strong>***</strong>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                
+                                                <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingThree">
+                                                  <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#baccordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                      Extra info
+                                                    </a>
+                                                  </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                  <div class="panel-body">
+                                                    &#9832; HOOFDGERECHT	&#9684; 20 MIN + 35 MIN	&#9977; 2 PERSONEN  <strong>***</strong>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                
+                                                </div>
+                                                    </div>
+                                            <br>
+                                            <!-- recept zelf -->
+                                            <div class="col-sm-6" style="border-radius: 10px;">
+                                            <strong class="modaltext" style="font-size:30px;">Bereiding</strong>
+                                                <br>
+                                            <p class="modalpar">
+                                                Verwarm de oven op 200 graden. Snijd de paprika in plakken en dep deze goed droog met keukenpapier. Snijd met een mandoline of dunschiller plakken van de wortel en courgette. Snijd ook de brie in plakken. Meng in een kom de eieren met de room, tijm, oregano en peper en zout. Bekleed nu de ovenschaal met het hartig taartdeeg door de plakken aan elkaar de maken.</p>
+                                            <br>
+                                                <img src="pics/spiraaltaart/Spiraaltaarta.png" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; width:150px;height:100px;"><span><img src="pics/spiraaltaart/Spiraaltaartb.png" style="width:150px;height:100px;"></span><span><img src="pics/spiraaltaart/Spiraaltaartc.png" style="width:150px;height:100px;"></span><span><img src="pics/spiraaltaart/Spiraaltaartd.png" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; width:150px;height:100px;"></span>
+                                                <br>
+                                                <br>
+                                                <p class="modalpar">Prik wat gaatjes in het deeg en begin met het toevoegen van de groenten. Eerst rechtop een ronde wortel, dan courgette enzovoorts. Voeg tussendoor een ronde met gegrilde paprika of brie toe. Op het einde worden de cirkels steeds een beetje kleine en voeg je rondjes van de groenten toe. Giet het ei mengsel er overheen en bak nu af in ongeveer 35 minuten in de oven.</p>
+                                                <br>
+                                                <img src="pics/spiraaltaart/Spiraaltaarte.png" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; width:150px;height:100px;"><span><img src="pics/spiraaltaart/Spiraaltaartf.png" style="width:150px;height:100px;"></span><span><img src="pics/spiraaltaart/Spiraaltaartg.png" style="width:150px;height:100px;"></span><span><img src="pics/spiraaltaart/Spiraaltaarth.png" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; width:150px;height:100px;"></span>
+                                                <br>
+                                                <br>
+                                                <p class="modalpar">Tip: Varieer met de groenten die je gebruikt zoals met zoete aardappel, gele courgette of aubergine.</p>
+                                                <br>
+                                                <p class="modalpar">Tip: Heb je geen mandoline? Gebruik dan een kaasschaaf of dunschiller om plakken van de groenten te maken.</p>
+                                                <br>
+                                                <p class="modalpar"><a href="https://www.leukerecepten.nl/recepten/spiraal-taart-met-brie/">Origineel</a></p>
+                                            </div>
+                                        </div>
+       
+                                        </div> <!-- container eindigt hier -->
+                                        </div> 
+                                                  
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                        </div>
+                        
+                        <!-- Social Media -->
+                        <div role="tabpanel" class="tab-pane" id="social" style="border-radius: 10px; background-color: crimson;border:solid crimson 5px;">
+                        <h2 class="paneltext">Wil je ons volgen op je telefoontje?</h2>
+                            <p>anders recepten.</p>
+                        </div>
+                        
+                        <!-- Over ons -->
+                        <div role="tabpanel" class="tab-pane" id="over" style="border-radius: 10px; background-color: darkorange; border:solid darkorange 5px;">
+                        
+                            <h2 class="paneltext">Over ons:</h2>
+                                <p>Als je zo geïnteresseerd bent in ons, of wat dan ook: we zijn natuurlijk niet zo guur dat we geen gegevens verschuilen!</p>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-4">
+                    <p style="border-radius: 10px; background-color:ghostwhite;">Deze tekst is bedoeld voor de zijkant. hier kunnen wat andere dinegn komen zoals een sign in gebeuren of iets anders maar dit kan worden weggelaten maaar ja dat is nog geheel te bekijken.Deze tekst is bedoeld voor de zijkant. hier kunnen wat andere dinegn komen zoals een sign in gebeuren of iets anders maar dit kan worden weggelaten maaar ja dat is nog geheel te bekijken.Deze tekst is bedoeld voor de zijkant. hier kunnen wat andere dinegn komen zoals een sign in gebeuren of iets anders maar dit kan worden weggelaten maaar ja dat is nog geheel te bekijken.Deze tekst is bedoeld voor de zijkant. hier kunnen wat andere dinegn komen zoals een sign in gebeuren of iets anders maar dit kan worden weggelaten maaar ja dat is nog geheel te bekijken.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Audio -->
+        <script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+</script>
+        
+    </body>
+</html>
