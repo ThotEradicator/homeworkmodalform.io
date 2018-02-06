@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="utf-8">
+         <title>Recepten van Geraldine</title>
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- <link href="custom/sytle.css" rel="stylesheet"> -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    
+    <body>
+
+        <header>
+            <h1>Geraldine's wonderlijke web der voedsels</h1>
+        </header>
+
+        <!-- linker kant voor de navigatie -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <ul class="nav nav-tabs" role="tablist" style="position: -webkit-sticky; position: sticky; top: 0;padding: 5px;background-color: #eee;border: 2px solid #555; z-index: 10;">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" data-toggle="tooltip" data-placement="top" title="Music"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                </a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-film" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Movies"></span></a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"data-toggle="tooltip" data-placement="top" title="Games"><span class="glyphicon glyphicon-road" aria-hidden="true"></span></a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" data-toggle="tooltip" data-placement="top" title="Settings"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span></a></li>
+                        <li role="presentation"><a href="#calzone" aria-controls="calzone" role="tab" data-toggle="tab" data-toggle="tooltip" data-placement="top" title="Calzone"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></a></li>
+                        <li role="presentation"><a href="#work" aria-controls="work" role="tab" data-toggle="tab" data-toggle="tooltip" data-placement="top" title="The New Years Adventure"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></a></li>
+                    </ul>
+
+                  <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home" style="padding: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
